@@ -28,3 +28,4 @@ set_property IOSTANDARD LVCMOS18 [get_ports button4]
 set_property IOSTANDARD LVCMOS18 [get_ports clock]
 set_property IOSTANDARD LVCMOS18 [get_ports mode]
 set_property IOSTANDARD LVCMOS18 [get_ports reset]
+create_clock -period 10.000 -name clock -waveform {0.000 5.000} clock

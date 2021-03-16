@@ -90,6 +90,7 @@ voteLogger VL(
 .cand2_vote_valid(valid_vote_2),
 .cand3_vote_valid(valid_vote_3),
 .cand4_vote_valid(valid_vote_4),
+.mode(mode),
 .cand1_vote_rcvd(cand1_vote_rcvd),
 .cand2_vote_rcvd(cand2_vote_rcvd),
 .cand3_vote_rcvd(cand3_vote_rcvd),

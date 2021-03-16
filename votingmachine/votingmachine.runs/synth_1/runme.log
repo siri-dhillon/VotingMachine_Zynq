@@ -14,42 +14,74 @@ Command: synth_design -top votingMachine -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23204
+INFO: [Synth 8-7075] Helper process launched with PID 15152
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 999.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'votingMachine' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:23]
 INFO: [Synth 8-6157] synthesizing module 'buttonControl' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/buttonControl.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'buttonControl' (1#1) [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/buttonControl.v:23]
 INFO: [Synth 8-6157] synthesizing module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/voteLogger.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'voteLogger' (2#1) [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/voteLogger.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'cand1_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:93]
-WARNING: [Synth 8-689] width (1) of port connection 'cand2_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:94]
-WARNING: [Synth 8-689] width (1) of port connection 'cand3_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:95]
-WARNING: [Synth 8-689] width (1) of port connection 'cand4_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:96]
+WARNING: [Synth 8-689] width (1) of port connection 'cand1_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:94]
+WARNING: [Synth 8-689] width (1) of port connection 'cand2_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:95]
+WARNING: [Synth 8-689] width (1) of port connection 'cand3_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:96]
+WARNING: [Synth 8-689] width (1) of port connection 'cand4_vote_rcvd' does not match port width (8) of module 'voteLogger' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:97]
 INFO: [Synth 8-6157] synthesizing module 'modeControl' [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/modeControl.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'modeControl' (3#1) [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/modeControl.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'votingMachine' (4#1) [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/sources_1/new/votingMachine.v:23]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 999.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 999.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 999.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 999.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/constrs_1/new/votingMachine.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clock' matched to 'port' objects. [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/constrs_1/new/votingMachine.xdc:31]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/constrs_1/new/votingMachine.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.srcs/constrs_1/new/votingMachine.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/votingMachine_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/votingMachine_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1007.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1007.473 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1007.473 ; gain = 8.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1007.473 ; gain = 8.020
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1007.473 ; gain = 8.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1007.473 ; gain = 8.020
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -75,25 +107,29 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1007.473 ; gain = 8.020
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1007.473 ; gain = 8.020
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1008.176 ; gain = 8.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1009.391 ; gain = 9.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -111,37 +147,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -160,48 +196,35 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    40|
 |3     |LUT1   |     5|
-|4     |LUT2   |     7|
-|5     |LUT3   |     2|
-|6     |LUT4   |    20|
-|7     |LUT5   |    17|
-|8     |LUT6   |    24|
+|4     |LUT2   |     4|
+|5     |LUT3   |     5|
+|6     |LUT4   |    24|
+|7     |LUT5   |    18|
+|8     |LUT6   |    36|
 |9     |FDRE   |   165|
 |10    |IBUF   |     7|
 |11    |OBUF   |     8|
 +------+-------+------+
-
-Report Instance Areas: 
-+------+------------------+----------------+------+
-|      |Instance          |Module          |Cells |
-+------+------------------+----------------+------+
-|1     |top               |                |   296|
-|2     |  VL              |voteLogger      |     6|
-|3     |  bc1             |buttonControl   |    54|
-|4     |  bc2             |buttonControl_0 |    55|
-|5     |  bc3             |buttonControl_1 |    56|
-|6     |  bc4             |buttonControl_2 |    53|
-|7     |  nolabel_line100 |modeControl     |    56|
-+------+------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1015.148 ; gain = 7.676
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1015.148 ; gain = 15.695
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1026.215 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1000.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1030.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+24 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1000.574 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1030.469 ; gain = 31.016
 INFO: [Common 17-1381] The checkpoint 'C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.runs/synth_1/votingMachine.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file votingMachine_utilization_synth.rpt -pb votingMachine_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 15 17:51:48 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 15 20:38:52 2021...

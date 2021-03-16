@@ -71,6 +71,8 @@ begin
                 leds <= candidate3_vote;
              else if (candidate4_button_press)
                 leds <= candidate4_vote;
+             else 
+                leds <= 0;
         end 
     end 
 end

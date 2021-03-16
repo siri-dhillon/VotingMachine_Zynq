@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 15 20:38:59 2021
+# Process ID: 13996
+# Current directory: C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.runs/impl_1
+# Command line: vivado.exe -log votingMachine.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source votingMachine.tcl -notrace
+# Log file: C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.runs/impl_1/votingMachine.vdi
+# Journal file: C:/GitHub/VotingMachine_Zynq/votingmachine/votingmachine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source votingMachine.tcl -notrace
